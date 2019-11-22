@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import DogsListView from './source/components/screens/DogsListView';
-import DogsBreedsView from './source/components/screens/DogsBreadsView';
+import DogsBreedsView from './source/components/screens/DogsBreedsView';
 import authContainer from './source/container/authContainer';
 import {Provider} from 'react-redux';
 import configureStore from './source/store/configureStore';

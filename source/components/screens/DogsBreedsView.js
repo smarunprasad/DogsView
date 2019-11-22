@@ -8,7 +8,7 @@ import NoDataAlertView from '../common/View/NoDataAlertView';
 import { alertMessages } from '../../constants/constants';
 
 //View
-import DogsBreedsItemView from '../screen-components/DogsBreadsItemsView';
+import DogsBreedsItemView from '../screen-components/DogsBreedsItemsView';
 //Styles
 import { styles, customFontFamily } from '../../styles/StyleSheet';
 
