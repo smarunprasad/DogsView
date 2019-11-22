@@ -1,6 +1,6 @@
 import React from 'react'
-import {View, Text} from 'react-native'
-import {colors} from '../../../styles/StyleSheet'
+import { View, Text } from 'react-native'
+import { colors, styles } from '../../../styles/StyleSheet'
 
 export default class NoDataAlertView extends React.Component {
 
@@ -10,13 +10,8 @@ export default class NoDataAlertView extends React.Component {
 
     render() {
         return (
-            <View style={{ 
-                flex: 1, 
-                paddingHorizontal: 20,
-                alignItems: 'center',
-                justifyContent:'center'
-            }}>
-               <Text style={{color: colors.gray, textAlign: 'center'}}>{this.props.noDataText}</Text>
+            <View style={styles.noDataAlertContainer}>
+                <Text style={{ color: colors.gray, textAlign: 'center' }}>{this.props.noDataText}</Text>
             </View>
         )
     }

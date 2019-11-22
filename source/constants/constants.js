@@ -1,22 +1,20 @@
  
 export const app = {
-    appName: 'Dogs Breads',
+    appName: 'Dogs Breeds',
 }
 
 export const navigationNames = {
-
-    HomeScreen: 'HomeScreen',
+    DogsBreedsView: 'DogsBreedsView',
+    DogsListView: 'DogsListView'
 }
 
 export const buttonTitle = {
-
     ok: 'Ok',
 }
 
 export const alertMessages = {
-
     someThingWentWrong: 'Something went wrong. Please try again later',
     noInternetConnection: 'Please check your Network connection',
-    noBreadsMessage: 'No Images found for this Bread',
+    noBreedsMessage: 'No Images found for this Breed',
     noDogsMessage: 'No Dogs found',
 }
