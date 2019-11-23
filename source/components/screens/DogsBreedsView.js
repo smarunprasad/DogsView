@@ -67,13 +67,17 @@ export default class DogsBreedsView extends React.Component {
                         (
                             <ActivityIndicatorView />
                         ) :
-                        this.state.breedList && this.state.breedList.length ?
+                        this.state.breedList && this.state.breedList.length == 1 ?
                             (
-                                <DogsBreedsItemView firstImageurl={this.state.breedList[0]} secondImageurl={this.state.breedList[1]} />
+                                <DogsBreedsItemView firstImageurl={this.state.breedList[0]} />
                             ) :
-                            (
-                                <NoDataAlertView noDataText={alertMessages.noDogsMessage}></NoDataAlertView>
-                            )
+                            this.state.breedList && this.state.breedList.length > 1 ?
+                                (
+                                    <DogsBreedsItemView firstImageurl={this.state.breedList[0]} secondImageurl={this.state.breedList[1]} />
+                                ) :
+                                (
+                                    <NoDataAlertView noDataText={alertMessages.noDogsMessage}></NoDataAlertView>
+                                )
                 }
             </ScrollView>
         );

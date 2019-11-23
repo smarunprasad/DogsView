@@ -15,9 +15,12 @@ export default class DogsBreedsItemView extends React.Component {
                 <Image style={[styles.breedImagePadding]}
                     source={{ uri: firstImageurl }}
                 />
-                <Image style={[styles.breedImagePadding]}
-                    source={{ uri: secondImageurl }}
-                />
+                {
+                    secondImageurl != null ? 
+                        <Image style={[styles.breedImagePadding]}
+                            source={{ uri: secondImageurl }}
+                        /> : null
+                }
             </View>
         );
     }

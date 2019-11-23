@@ -37,6 +37,7 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.white
     },
     breedTitleTextPadding: {
+        paddingTop: 15,
         paddingBottom: 4,
         paddingHorizontal: 20,
         color: colors.white,
